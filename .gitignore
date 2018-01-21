@@ -9,4 +9,4 @@
 *.iml
 out
 gen
-workspace.xml
+/node_modules/

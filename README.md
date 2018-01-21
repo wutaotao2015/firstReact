@@ -1,2 +1,3 @@
-# firstReact
-first repository in github
+# firstReactApp
+由Facebook出品的create-react-app脚手架打造
+用于学习ReactJs
