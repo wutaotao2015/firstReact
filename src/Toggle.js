@@ -11,9 +11,7 @@ export default class Toggle extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick(){
-        this.setState(prevState => ({
-            toggleOn: !prevState.toggleOn
-        }));
+        this.setState(prevState => ({toggleOn: !prevState.toggleOn}));
     }
     render(){
         return (
