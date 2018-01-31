@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Toggle from "./Toggle";
 import Page from "./Page.jsx";
 import ControlledForm from "./ControlledForm.jsx";
+import MultipleValueForm from "./MultipleValueForm";
 // ReactDOM.render( <App />, document.getElementById('root') );
 // ReactDOM.render(<Clock/>, document.getElementById('root'))
 function ClockArmy() {
@@ -73,7 +74,14 @@ const form = <form>
     <input type="submit" value="Submit"/>
 </form>;
 // ReactDOM.render(form, document.getElementById('root'))
-ReactDOM.render(<ControlledForm/>, document.getElementById('root'));
+// ReactDOM.render(<ControlledForm/>, document.getElementById('root'));
+const select = <select>
+    <option>a</option>
+    <option selected>b</option>
+    <option>b</option>
+</select>;
+// ReactDOM.render(select, document.getElementById('root'))
+ReactDOM.render(<MultipleValueForm/>, document.getElementById('root'));
 registerServiceWorker();
 
 
