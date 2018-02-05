@@ -9,6 +9,7 @@ import Page from "./Page.jsx";
 import ControlledForm from "./ControlledForm.jsx";
 import MultipleValueForm from "./MultipleValueForm";
 import Calculator from "./Calculator";
+import SignUpDialog from "./SignUpDialog";
 // ReactDOM.render( <App />, document.getElementById('root') );
 // ReactDOM.render(<Clock/>, document.getElementById('root'))
 function ClockArmy() {
@@ -83,7 +84,8 @@ const select = <select>
 </select>;
 // ReactDOM.render(select, document.getElementById('root'))
 // ReactDOM.render(<MultipleValueForm/>, document.getElementById('root'));
-ReactDOM.render(<Calculator/>, document.getElementById('root'))
+// ReactDOM.render(<Calculator/>, document.getElementById('root'))
+ReactDOM.render(<SignUpDialog/>, document.getElementById('root'))
 registerServiceWorker();
 
 
