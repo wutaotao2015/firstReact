@@ -8,6 +8,7 @@ export default class TemperatureInput extends Component {
     }
 
     handleChange(evt) {
+        //函数式编程思想，onTemperatureChange = {this.handleCelChange}中函数作为参数
         this.props.onTemperatureChange(evt.target.value)
     }
 

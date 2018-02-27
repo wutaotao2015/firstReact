@@ -10,6 +10,7 @@ import ControlledForm from "./ControlledForm.jsx";
 import MultipleValueForm from "./MultipleValueForm";
 import Calculator from "./Calculator";
 import SignUpDialog from "./SignUpDialog";
+import FilterableProductTable from "./FilterableProductTable";
 // ReactDOM.render( <App />, document.getElementById('root') );
 // ReactDOM.render(<Clock/>, document.getElementById('root'))
 function ClockArmy() {
@@ -85,7 +86,16 @@ const select = <select>
 // ReactDOM.render(select, document.getElementById('root'))
 // ReactDOM.render(<MultipleValueForm/>, document.getElementById('root'));
 // ReactDOM.render(<Calculator/>, document.getElementById('root'))
-ReactDOM.render(<SignUpDialog/>, document.getElementById('root'))
+// ReactDOM.render(<SignUpDialog/>, document.getElementById('root'))
+const datasource = [
+    {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+    {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+    {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+    {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+    {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+    {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
+];
+ReactDOM.render(<FilterableProductTable products={datasource}/>, document.getElementById('root'));
 registerServiceWorker();
 
 
